@@ -1,0 +1,37 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+p, h3, h4 {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.content {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px gray ;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+}
+.center {
+    text-align: center;
+}
+input {
+    background-color: whitesmoke;
+    border: 2px dashed gray;
+    width: 144px;
+    height: 20px;
+}
+button {
+    width: 124px;
+    height: 24px;
+    margin-top: 15px;
+    background-color: palegoldenrod;
+    border-color: goldenrod;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}

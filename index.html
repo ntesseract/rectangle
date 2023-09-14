@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function hitungPer() {
+            // Mengambil value panjang dan lebar dari input
+            var panjang = parseFloat(document.getElementById("panjang").value);
+            var lebar = parseFloat(document.getElementById("lebar").value);
+
+            // Rumus luas dan keliling
+            var luas = panjang * lebar;
+            var keliling = 2 * (panjang + lebar);
+
+            // Menuliskan hasil menggunakan .innerHTML
+            document.getElementById("hasilLuas").innerHTML = luas;
+            document.getElementById("hasilKeliling").innerHTML = keliling;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Calculator Persegi panjang</h1>
+            <hr>
+            <div class="center">
+                <label for="panjang">Masukan Tinggi Persegi Panjang</label>
+                <br>
+                <input type="number" name="panjang" id="panjang" placeholder="Isi Tinggi">
+                <br>
+                <label for="lebar">Masukan Lebar Persegi Panjang</label>
+                <br>
+                <input type="number" name="lebar" id="lebar" placeholder="Isi Lebar">
+                <br>
+                <button onclick="hitungPer()">Hitung</button>
+                <br>
+            </div>
+            <hr>
+            <h2>Hasil hitung data tersebut adalah</h2>
+            <h3>Luas :</h3>
+            <h4 id="hasilLuas"></h4>
+            <h3>Keliling :</h3>
+            <h4 id="hasilKeliling"></h4>
+        </div>
+    </div>
+</body>
+</html>
